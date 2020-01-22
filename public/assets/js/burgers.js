@@ -6,11 +6,16 @@ $(function() {
     var newDevoured = $(this).data("newdevoured");
 
     var newDevouredState = {
-      dvoured: newDevoured
+      devoured: newDevoured
     };
 
+    console.log(this);
+
+    console.log("Point 1 - newDevoured: ", newDevoured);
+    console.log("Point 2 - newDevoured: ", newDevouredState);
+
     // Send the PUT request.
-    $.ajax("/api/cats/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newDevouredState
     }).then(

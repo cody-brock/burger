@@ -19,6 +19,7 @@ var burger = {
   },
   create: function(cols, vals, cb) {
     orm.create("burgers", cols, vals, function(res) {
+      console.log("Do we get here?");
       cb(res);
     })
   },
