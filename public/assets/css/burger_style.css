@@ -1,3 +1,15 @@
-h1 {
-  color: red;
+body {
+  background-color: tomato;
+}
+
+.jumbotron {
+  margin-top: 40px;
+  text-align: center;
+  color: orange;
+  background-color: white;
+}
+
+.burger-entry {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
